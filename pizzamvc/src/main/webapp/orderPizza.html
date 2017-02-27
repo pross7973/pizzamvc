@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pat's Online Pizza Store</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <h1>Pat's Pizza Web Order Form</h1>
+        <form name='pizzaform' method='get' action='orderpizza'>
+            <p>Customer Email: <input type='text' name='email' size='40' 
+                                      placeholder="enter email" required></p>
+            <input type='radio' name='size' value='large' checked required>Large
+            <input type='radio' name='size' value='medium'>Medium
+            <input type='radio' name='size' value='small'>Small
+            <br>
+            <p> Crust:
+            <input type='radio' name='crust' value='thin' checked required>Thin
+            <input type='radio' name='crust' value='pan'>Pan
+            <input type='radio' name='crust' value='hand-tossed'>Hand-Tossed
+            <br>
+            <input type="checkbox" name="toppings" value="pepperoni">Pepperoni
+            <input type="checkbox" name="toppings" value="mushroom">Mushroom
+            <input type="checkbox" name="toppings" value="pineapple">Pineapple
+            <br>
+            <input type='hidden' name='userAction' value='order'>
+            <input type="submit" name="order" value="Place Order">
+        </form>
+    </body>
+</html>
+
